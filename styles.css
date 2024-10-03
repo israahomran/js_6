@@ -1,0 +1,41 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px; /* إضافة حواف */
+}
+
+h1 {
+    text-align: center;
+    color: #ff6347; /* لون مميز لعنوان الصفحة */
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.recipe {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.recipe img {
+    width: 100%; /* تأكيد على أن الصورة تأخذ عرض العنصر */
+    height: 150px; /* تحديد ارتفاع ثابت لجميع الصور */
+    object-fit: cover; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    border-radius: 5px;
+}
